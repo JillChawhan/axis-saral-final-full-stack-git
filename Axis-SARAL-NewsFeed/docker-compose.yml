@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  api_service:
+    build: .
+    restart: always
+    ports:
+      - 8088:8088
+    depends_on:
+      - mysql_db
+
+  mysql_db:
+    image: "mysql:latest"
+    restart: always
+    environment:
+      MYSQL_DATABASE: axis_saral_learning
+      MYSQL_USER: jill
+      MYSQL_PASSWORD: chawhan
+      #      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: jillchawhan7*

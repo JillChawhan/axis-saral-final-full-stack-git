@@ -1,0 +1,6 @@
+com\axis\controller\PdfController.class
+com\axis\entity\PdfFile.class
+com\axis\StorageServiceApplication.class
+com\axis\service\PdfFileServiceImpl.class
+com\axis\respository\PdfFileRepository.class
+com\axis\service\PdfFileService.class
